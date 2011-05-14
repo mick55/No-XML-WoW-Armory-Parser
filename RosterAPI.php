@@ -498,8 +498,8 @@ class RosterAPI {
 
         $xpath = new DOMXPath($this->characterDom);
 
-        $profName = $xpath->query('//span[@class="profession-details"]/span[@class="name"]');
-        $profValue = $xpath->query('//span[@class="profession-details"]/span[@class="value"]');
+        $profName = $xpath->query('//a[@class="profession-details"]/span[@class="name"]');
+        $profValue = $xpath->query('//a[@class="profession-details"]/span[@class="value"]');
 
         /*
          * If the character does not have either profession, or is missing a profession
